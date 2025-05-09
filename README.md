@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Bangla-HealthNER Annotation using LLMs
 
 This project provides a framework for annotating Bengali health-related text data using OpenAI's LLMs for Named Entity Recognition (NER). The system implements in-context learning with few-shot examples to perform NER annotations.
@@ -8,8 +7,9 @@ This project provides a framework for annotating Bengali health-related text dat
 ```
 ├── annotate.py             # Main annotation script
 ├── evaluate.py             # Evaluation script
-├── env.example             # Example environment variables file
 ├── requirements.txt        # Python dependencies
+├── train_NER.ipynb         # Downstream NER pipeline with BERT-based models
+├── results/                # Saves all the annotation results
 └── src/                    # Source code
     ├── configs/            # Configuration files
     │   ├── prompts.py      # Prompt templates
@@ -27,7 +27,7 @@ This project provides a framework for annotating Bengali health-related text dat
 
 1. Clone the repository
 2. Install dependencies: `pip install -r requirements.txt`
-3. Create a `.env` file with your OpenAI API key (see `env.example`)
+3. Create a `.env` file with your OpenAI API key
 
 ## Usage
 
